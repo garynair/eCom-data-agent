@@ -1,0 +1,110 @@
+{
+  "generated_by": "agent2",
+  "revenue_formula": "(\"Price\" * \"Units\") - \"Discounts\"",
+  "returns_decision": {
+    "chosen": "excluding_returns",
+    "reason": "A returned sale isn't revenue the business kept; this is the standard reporting convention.",
+    "revenue_including_returns": 2117111.78,
+    "revenue_excluding_returns": 1069322.03,
+    "return_rate_pct": 50.27
+  },
+  "kpis": {
+    "revenue": 1069322.03,
+    "transactions": 3000,
+    "customers": 954,
+    "avg_order_value": 716.70,
+    "return_rate_pct": 50.27
+  },
+  "revenue_by_month": [
+    { "label": "2021-03", "value": 5635.18 },
+    { "label": "2021-04", "value": 40727.92 },
+    { "label": "2021-05", "value": 57464.93 },
+    { "label": "2021-06", "value": 55527.59 },
+    { "label": "2021-07", "value": 51486.57 },
+    { "label": "2021-08", "value": 28600.30 },
+    { "label": "2021-09", "value": 47246.42 },
+    { "label": "2021-10", "value": 43126.45 },
+    { "label": "2021-11", "value": 46903.82 },
+    { "label": "2021-12", "value": 51523.03 },
+    { "label": "2022-01", "value": 33141.26 },
+    { "label": "2022-02", "value": 49763.36 },
+    { "label": "2022-03", "value": 40372.85 },
+    { "label": "2022-04", "value": 31351.91 },
+    { "label": "2022-05", "value": 39727.22 },
+    { "label": "2022-06", "value": 43523.53 },
+    { "label": "2022-07", "value": 45429.34 },
+    { "label": "2022-08", "value": 53880.72 },
+    { "label": "2022-09", "value": 39532.29 },
+    { "label": "2022-10", "value": 45431.86 },
+    { "label": "2022-11", "value": 56920.45 },
+    { "label": "2022-12", "value": 42362.34 },
+    { "label": "2023-01", "value": 46453.02 },
+    { "label": "2023-02", "value": 33556.71 },
+    { "label": "2023-03", "value": 39632.96 }
+  ],
+  "revenue_by_category": [
+    { "label": "Toys", "value": 197766.01 },
+    { "label": "Automotive", "value": 193726.79 },
+    { "label": "Home", "value": 177954.22 },
+    { "label": "Electronics", "value": 177625.68 },
+    { "label": "Fashion", "value": 172063.11 },
+    { "label": "Books", "value": 150186.22 }
+  ],
+  "revenue_by_channel": [
+    { "label": "In-store", "value": 554560.89 },
+    { "label": "Online", "value": 514761.14 }
+  ],
+  "revenue_by_payment": [
+    { "label": "Credit Card", "value": 234914.10 },
+    { "label": "Cash", "value": 215670.06 },
+    { "label": "Debit Card", "value": 207392.15 },
+    { "label": "UPI", "value": 206639.06 },
+    { "label": "Net Banking", "value": 204706.66 }
+  ],
+  "top_products": [
+    { "name": "Motor Oil", "revenue": 48471.71, "transactions": 125 },
+    { "name": "Laptop", "revenue": 48393.47, "transactions": 121 },
+    { "name": "Doll", "revenue": 46683.58, "transactions": 103 },
+    { "name": "Car Charger", "revenue": 46525.38, "transactions": 92 },
+    { "name": "Board Game", "revenue": 45566.90, "transactions": 110 },
+    { "name": "Jeans", "revenue": 45242.25, "transactions": 113 },
+    { "name": "Headphones", "revenue": 40913.23, "transactions": 103 },
+    { "name": "Dress", "revenue": 39972.74, "transactions": 105 },
+    { "name": "Bed Sheets", "revenue": 38543.19, "transactions": 111 },
+    { "name": "Air Freshener", "revenue": 38267.07, "transactions": 96 }
+  ],
+  "segments": {
+    "by_age_band": [
+      { "label": "Under 25", "customers": 139, "revenue": 139295.19 },
+      { "label": "25-34", "customers": 207, "revenue": 238253.46 },
+      { "label": "35-44", "customers": 193, "revenue": 232274.72 },
+      { "label": "45-54", "customers": 223, "revenue": 217252.95 },
+      { "label": "55+", "customers": 238, "revenue": 242245.71 }
+    ],
+    "by_location": [
+      { "label": "Pune", "customers": 116, "revenue": 124909.91 },
+      { "label": "Mumbai", "customers": 106, "revenue": 119240.72 },
+      { "label": "Hyderabad", "customers": 115, "revenue": 117131.91 },
+      { "label": "Surat", "customers": 99, "revenue": 113054.06 },
+      { "label": "Bangalore", "customers": 106, "revenue": 111906.94 },
+      { "label": "Jaipur", "customers": 96, "revenue": 105687.58 },
+      { "label": "Chennai", "customers": 87, "revenue": 103443.38 },
+      { "label": "Delhi", "customers": 102, "revenue": 96984.81 },
+      { "label": "Kolkata", "customers": 88, "revenue": 90517.96 },
+      { "label": "Ahmedabad", "customers": 85, "revenue": 86444.76 }
+    ]
+  },
+  "repeat_vs_one_time_buyers": {
+    "one_time": 146,
+    "repeat": 808
+  },
+  "data_quality_flags": {
+    "return_rate_unusually_high": true,
+    "zero_or_negative_price": 0,
+    "zero_or_negative_units": 0,
+    "discount_exceeds_sale": 0,
+    "negative_discount": 0,
+    "customers_with_zero_transactions": 46
+  },
+  "input_questions_answered": []
+}

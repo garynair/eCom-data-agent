@@ -1,0 +1,113 @@
+{
+  "generated_by": "agent1",
+  "source": {
+    "project": "gn-dataproject",
+    "schema": "public",
+    "tables_used": ["customers", "transactions"],
+    "tables_ignored": ["dsm"]
+  },
+  "tables": {
+    "customers": {
+      "row_count": 1000,
+      "primary_key": "Customer_ID",
+      "columns": [
+        { "name": "Customer_ID", "type": "bigint" },
+        { "name": "Customer_Name", "type": "text" },
+        { "name": "Customer_Email", "type": "text" },
+        { "name": "Customer_Number", "type": "text" },
+        { "name": "Age", "type": "bigint" },
+        { "name": "Gender", "type": "text" },
+        { "name": "Location", "type": "text" }
+      ],
+      "null_counts": {
+        "Customer_ID": 0,
+        "Customer_Name": 0,
+        "Customer_Email": 0,
+        "Customer_Number": 0,
+        "Age": 0,
+        "Gender": 0,
+        "Location": 0
+      }
+    },
+    "transactions": {
+      "row_count": 3000,
+      "primary_key": "Transaction_ID",
+      "columns": [
+        { "name": "Transaction_ID", "type": "bigint" },
+        { "name": "Date_of_Purchase", "type": "text", "format": "DD-MM-YYYY" },
+        { "name": "Customer_ID", "type": "bigint" },
+        { "name": "Product_Category", "type": "text" },
+        { "name": "Product_Name", "type": "text" },
+        { "name": "Units", "type": "bigint" },
+        { "name": "Price", "type": "double precision" },
+        { "name": "Discounts", "type": "double precision" },
+        { "name": "Returned", "type": "boolean" },
+        { "name": "Mode_of_Payment", "type": "text" },
+        { "name": "Purchase_Channel", "type": "text" }
+      ],
+      "null_counts": {
+        "Transaction_ID": 0,
+        "Date_of_Purchase": 0,
+        "Customer_ID": 0,
+        "Product_Category": 0,
+        "Product_Name": 0,
+        "Units": 0,
+        "Price": 0,
+        "Discounts": 0,
+        "Returned": 0,
+        "Mode_of_Payment": 0,
+        "Purchase_Channel": 0
+      }
+    }
+  },
+  "customer_id_link": {
+    "enforced_by_db": false,
+    "orphan_transactions": 0,
+    "customers_with_transactions": 954,
+    "customers_with_zero_transactions": 46,
+    "avg_transactions_per_active_customer": 3.14,
+    "max_transactions_per_customer": 10
+  },
+  "distinct_values": {
+    "Gender": [
+      { "value": "Female", "count": 343 },
+      { "value": "Other", "count": 333 },
+      { "value": "Male", "count": 324 }
+    ],
+    "Location": [
+      { "value": "Pune", "count": 116 },
+      { "value": "Hyderabad", "count": 115 },
+      { "value": "Mumbai", "count": 106 },
+      { "value": "Bangalore", "count": 106 },
+      { "value": "Delhi", "count": 102 },
+      { "value": "Surat", "count": 99 },
+      { "value": "Jaipur", "count": 96 },
+      { "value": "Kolkata", "count": 88 },
+      { "value": "Chennai", "count": 87 },
+      { "value": "Ahmedabad", "count": 85 }
+    ],
+    "Product_Category": [
+      { "value": "Automotive", "count": 520 },
+      { "value": "Toys", "count": 509 },
+      { "value": "Fashion", "count": 508 },
+      { "value": "Electronics", "count": 502 },
+      { "value": "Home", "count": 487 },
+      { "value": "Books", "count": 474 }
+    ],
+    "Mode_of_Payment": [
+      { "value": "Credit Card", "count": 616 },
+      { "value": "UPI", "count": 608 },
+      { "value": "Net Banking", "count": 599 },
+      { "value": "Debit Card", "count": 595 },
+      { "value": "Cash", "count": 582 }
+    ],
+    "Purchase_Channel": [
+      { "value": "In-store", "count": 1526 },
+      { "value": "Online", "count": 1474 }
+    ]
+  },
+  "date_range": {
+    "earliest_purchase": "2021-03-25",
+    "latest_purchase": "2023-03-25"
+  }
+}
