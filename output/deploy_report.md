@@ -49,3 +49,21 @@ in an actual browser to see the filled-in charts, same as with the local file.
 ## Status
 
 **Live and public.** Deployment state: READY.
+
+## Update — 2026-09-21
+
+The original link (`ecommerce-data-agent.vercel.app`) broke: Gary connected that same Vercel
+project to his personal GitHub repo `garynair/garynair` (for an unrelated LinkedIn/portfolio
+purpose), and every push to that repo's `main` branch auto-redeployed the project with that
+repo's content instead of the dashboard — which doesn't serve anything at `/`, hence the 404.
+
+Fix: rather than trying to disconnect the git integration (no disconnect action is exposed
+through the Vercel MCP tools available here — only the Vercel CLI supports `vercel git
+disconnect`), a fresh, git-unconnected project was created and the same static dashboard
+file deployed to it directly.
+
+**New live link: https://ecommerce-analytics-dashboard-brown-xi.vercel.app**
+
+This project has no git repo attached, so nothing else can silently overwrite it again.
+`ecommerce-data-agent.vercel.app` remains connected to `garynair/garynair` and will keep
+reflecting whatever that repo deploys — treat that domain as no longer the dashboard's home.

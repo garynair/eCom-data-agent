@@ -4,6 +4,8 @@
 
 A four-agent pipeline that explores, summarizes, and visualizes e-commerce data from Supabase, then optionally publishes the result as a dashboard on Vercel. Agents run one at a time and hand work to each other through files, not chat.
 
+**Live dashboard:** [ecommerce-analytics-dashboard-brown-xi.vercel.app](https://ecommerce-analytics-dashboard-brown-xi.vercel.app)
+
 ![Dashboard](dashboard.png)
 
 ## The four agents
